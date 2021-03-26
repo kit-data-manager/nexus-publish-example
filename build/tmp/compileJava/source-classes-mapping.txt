@@ -1,2 +1,0 @@
-edu/kit/datamanager/nexus/publish/example/Dummy.java
- edu.kit.datamanager.nexus.publish.example.Dummy
