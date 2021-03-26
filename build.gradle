@@ -1,0 +1,33 @@
+buildscript {
+    repositories { 
+        jcenter()
+    }
+    dependencies {
+        classpath("net.researchgate:gradle-release:2.6.0")
+    }
+}
+
+plugins { 
+    id 'java'
+    id 'maven'
+    id 'jacoco'
+    id 'maven-publish'
+    id "io.github.gradle-nexus.publish-plugin" version "1.0.0"
+}
+
+description = 'Sample project showing the publish process using Gradle Nexus Publish Plugin'
+group = 'edu.kit.datamanager'
+version = project['version']
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+}
+
+if (project.hasProperty('release')) {
+    println 'Using release profile for building ' + project.getName()
+    apply from: 'gradle/profile-release.gradle'
+}
