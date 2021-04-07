@@ -10,19 +10,19 @@ is used.
 
 ```
 nexus-publish-example/
-├── .gradle/
-├── gradle/
-│   ├── wrapper
-│   ├── profile-release.gradle
-├── src/
-├── .gitignore
-├── LICENSE
-├── README.md
-├── build.gradle 
-├── gradle.properties
-├── gradlew
-├── gradlew.bat
-└── settings.gradle
++-- .gradle/
++-- gradle/
+�   +-- wrapper
+�   +-- profile-release.gradle
++-- src/
++-- .gitignore
++-- LICENSE
++-- README.md
++-- build.gradle 
++-- gradle.properties
++-- gradlew
++-- gradlew.bat
++-- settings.gradle
  ```
  
  The listing above shows the project structure. Relevant for the publishing process are the following files: 
@@ -47,17 +47,17 @@ gpg (GnuPG) 2.2.27; Copyright (C) 2021 g10 Code GmbH
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 [...]
-pub   rsa3072 2021-03-29 [SC] [verfällt: 2023-03-29]
+pub   rsa3072 2021-03-29 [SC] [verf�llt: 2023-03-29]
       D724FA7DAC5AA604464E2625A2957C69C4A94806
 uid                      ###########################
-sub   rsa3072 2021-03-29 [E] [verfällt: 2023-03-29]
+sub   rsa3072 2021-03-29 [E] [verf�llt: 2023-03-29]
 $ gpg --keyserver hkp://pool.sks-keyservers.net --send-keys D724FA7DAC5AA604464E2625A2957C69C4A94806
-gpg: sende Schlüssel A2957C69C4A94806 auf hkp://pool.sks-keyservers.net
+gpg: sende Schl�ssel A2957C69C4A94806 auf hkp://pool.sks-keyservers.net
 $ gpg --list-keys --keyid-format SHORT
-pub   rsa3072/C4A94806 2021-03-29 [SC] [verfällt: 2023-03-29]
+pub   rsa3072/C4A94806 2021-03-29 [SC] [verf�llt: 2023-03-29]
       D724FA7DAC5AA604464E2625A2957C69C4A94806
 uid      [ ultimativ ] ###########################
-sub   rsa3072/D8FBDD6F 2021-03-29 [E] [verfällt: 2023-03-29]
+sub   rsa3072/D8FBDD6F 2021-03-29 [E] [verf�llt: 2023-03-29]
 $
 ```
 
