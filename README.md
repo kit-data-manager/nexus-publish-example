@@ -10,19 +10,19 @@ is used.
 
 ```
 nexus-publish-example/
-??? .gradle/
-??? gradle/
-?   ??? wrapper
-?   ??? profile-release.gradle
-??? src/
-??? .gitignore
-??? LICENSE
-??? README.md
-??? build.gradle 
-??? gradle.properties
-??? gradlew
-??? gradlew.bat
-??? settings.gradle
+├── .gradle/
+├── gradle/
+│   ├── wrapper
+│   ├── profile-release.gradle
+├── src/
+├── .gitignore
+├── LICENSE
+├── README.md
+├── build.gradle 
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+└── settings.gradle
  ```
  
  The listing above shows the project structure. Relevant for the publishing process are the following files: 
