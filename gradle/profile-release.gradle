@@ -27,6 +27,10 @@ release {
     versionPropertyFile = 'gradle.properties'
     //set possible properties which may contain the version
     versionProperties = ['version', 'mainversion']
+    git {
+        //branch from where to release (default: master)
+        requireBranch = 'main'
+    }
 }
 
 //for java plugin
