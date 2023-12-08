@@ -19,6 +19,8 @@ import java.util.Optional;
 
 /**
  * Dummy class to have some content inside the published artifacts.
+ * 
+ * - Version 0.0.2
  *
  * @author jejkal
  */
