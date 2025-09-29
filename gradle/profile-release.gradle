@@ -55,7 +55,10 @@ nexusPublishing {
     repositories {
         //select sonatype repository as publication destination 
         //uses pre-configured URLs, e.g. https://oss.sonatype.org/
-        sonatype()
+        sonatype(
+            nexusUrl.set(uri("https://ossrh-staging-api.central.sonatype.com/service/local/"))
+            snapshotRepositoryUrl.set(uri("https://central.sonatype.com/repository/maven-snapshots/"))
+        )
         //for alternate publication desination define nexusUrl and snapshotRepositoryUrl
         //also relevant for users registered in Sonatype after 24 Feb 2021
         //sonatype {
