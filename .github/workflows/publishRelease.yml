@@ -12,7 +12,7 @@ jobs:
         with:
           java-version: 15
       - name: Publish package
-        run: gradle -Prelease publishToSonatype closeAndReleaseSonatypeStagingRepository
+        run: gradlew -Prelease publishToSonatype closeAndReleaseSonatypeStagingRepository
         env:
            ORG_GRADLE_PROJECT_sonatypeUsername : ${{ secrets.OSSRH_USERNAME }}
            ORG_GRADLE_PROJECT_sonatypePassword : ${{ secrets.OSSRH_PASSWORD }}
