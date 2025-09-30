@@ -32,7 +32,8 @@ group = 'edu.kit.datamanager'
 version = project['version']
 
 repositories {
-    jcenter()
+    mavenLocal()   
+    mavenCentral()
 }
 
 dependencies {
