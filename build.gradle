@@ -15,9 +15,6 @@
  */
 
 buildscript {
-    repositories { 
-        jcenter()
-    }
     dependencies {
         classpath("net.researchgate:gradle-release:3.1.0")
     }
